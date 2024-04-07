@@ -24,14 +24,13 @@ function hide(btn) {
     p.style = "display:none;height:0;";
 }
 
-// initial condition [all hidden except the first]
-btns[0].style = "background-image: url('./assets/images/icon-minus.svg')";
-btns[0].parentElement.parentElement.lastElementChild.style =
-    "display:block;height:fit-content;";
-
 btns.forEach((btn) => {
     // initial condition [all hidden except the first]
     btn.setAttribute("class", "plus");
+    btns[0].setAttribute("class", "minus");
+    btns[0].style = "background-image: url('./assets/images/icon-minus.svg')";
+    btns[0].parentElement.parentElement.lastElementChild.style =
+        "display:block;height:fit-content;";
     // on btn click
     btn.addEventListener("click", (e) => {
         if (btn.classList.contains("minus")) {

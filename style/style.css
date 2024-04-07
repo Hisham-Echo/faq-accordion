@@ -95,6 +95,7 @@ section header button {
   width: 30px;
   height: 30px;
   border: none;
+  color: transparent;
 }
 section::after {
   cursor: pointer;
@@ -119,7 +120,11 @@ section::after {
     max-width: 580px;
     padding: 30px;
   }
+  main h1 {
+    font-size: 3.5rem;
+  }
   main section header h2 {
     width: 90%;
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -104,6 +104,7 @@ section {
             width: 30px;
             height: 30px;
             border: none;
+            color: transparent;
         }
     }
     &::after {
@@ -129,8 +130,12 @@ section {
         margin: 0;
         max-width: 580px;
         padding: 30px;
+        h1 {
+            font-size: 3.5rem;
+        }
         section header h2 {
             width: 90%;
+            font-size: 1.1rem;
         }
     }
 }
