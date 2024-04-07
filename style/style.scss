@@ -47,6 +47,7 @@ main {
     flex-flow: column nowrap;
     justify-content: space-between;
     padding: 20px;
+    box-shadow: 0 15px 50px 0 #00000033;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -131,7 +132,13 @@ section {
         max-width: 580px;
         padding: 30px;
         h1 {
+            padding-left: 60px;
             font-size: 3.5rem;
+            &::before {
+                top: 12px;
+                width: 40px;
+                height: 40px;
+            }
         }
         section header h2 {
             width: 90%;
